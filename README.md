@@ -1,34 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align='center'>
+<img src="https://skillicons.dev/icons?i=jest" width="80px"></h1>
+<br/> <br/>
+<h1>Testes com Jest</h1>
+</div>
 
-## Getting Started
+## Descrição
 
-First, run the development server:
+### Testes Básicos com Jest: Componente Header
+Este repositório ilustra a implementação de princípios fundamentais de testes por meio do framework [jest](https://jestjs.io/pt-BR/docs/getting-started). Dentro deste projeto, você terá acesso a um exemplo abrangendo a configuração do Jest e a execução de testes unitários em um componente Header. O Header é um elemento-chave em diversas aplicações, pois engloba links, rotas, textos e estilos que constituem a estrutura de navegação da interface. Além disso, o teste também considera a funcionalidade de abertura de modais no menu mobile. Através dessa abordagem, buscamos garantir a qualidade, estabilidade e confiabilidade do componente, assim como demonstrar boas práticas de teste em projetos React.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### Recursos Destacados:
+A abordagem adotada neste projeto consistiu em criar os testes após a implementação do código, com foco na validação das funcionalidades do componente. Através dos testes unitários, foi possível verificar se o componente estava se comportando conforme o esperado em diversas situações, como cliques em links, interações de usuário e ajustes de estilo.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Os testes foram organizados de forma a abranger casos de uso relevantes para o componente, garantindo que ele continuasse funcionando corretamente mesmo após futuras atualizações ou modificações no código. Além disso, foram definidos cenários de teste abrangentes para garantir a cobertura dos principais fluxos de interação.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+A implementação dos testes unitários permitiu aumentar a confiança na integridade do componente e proporcionou uma forma eficaz de detectar e corrigir possíveis problemas à medida que o código evoluía. A utilização do Jest como ferramenta de testes proporcionou uma experiência simplificada e uma visão abrangente do status da cobertura e do comportamento do componente.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+[Ver Projeto](https://basic-test-with-jest.vercel.app/)
 
-## Learn More
+#
 
-To learn more about Next.js, take a look at the following resources:
+![Web 1](./public/code.png)
+#
+![Web 2](./public/code-2.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<br>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🛠️ Tecnologias
 
-## Deploy on Vercel
+💻 **Front-end**
+- [Next.js 13.4](https://nextjs.org)
+- [Typescript](https://www.typescriptlang.org)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📚 **Bibliotecas**
+- [jest](https://jestjs.io/pt-BR/docs/getting-started)
+- [testing-library](https://testing-library.com/)
+- [heroicons](https://heroicons.com/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+🎨 **Estilização**
+- [tailwindcss](https://tailwindcss.com/docs/installation)
+
+🔋 **Versionamento e Deploy**
+- [Git](https://git-scm.com)
+- [Vercel](https://vercel.com/)
+
+<br>
+
+⚙️ **Configuranções e Instalações**
+
+Clone do Projeto
+
+    $ git clone https://github.com/renovatt/basic-test-with-jest.git
+Instalando as dependências
+
+    $ npm install
+
+Iniciando o projeto
+
+    $ npm run dev
+
+<br>
+
+**Como contribuir?**
+
+- Você pode dar suporte me seguindo aqui no GitHub
+- Dando uma estrela no projeto
+- Criar uma conexão comigo no linkedin fazendo parte da minha networking e curtir o meu projeto.
+
+<br>
+
+**Autor**
+[Wildemberg Renovato de Lima](https://www.linkedin.com/in/renovatt/)
