@@ -4,7 +4,7 @@ import { Bars3Icon } from '@heroicons/react/24/outline'
 
 const Navbar = ({ openModal }: NavbarTypeProps) => {
   return (
-    <nav className="flex items-center justify-between" >
+    <nav className="flex items-center justify-between">
       <ul className="hidden md:flex md:items-center md:justify-between">
         <li className="m-2 p-2">
           <RouterLinks href="/" text="Início" />

@@ -8,8 +8,9 @@ const NavbarMobile = ({ modal, closeModal }: NavbarMobileTypeProps) => {
       {modal && (
         <nav
           data-testid="navbar-mobile"
-          className={`absolute left-0 top-0 z-50 flex h-screen w-screen items-center justify-center bg-primary bg-gradient-to-b from-transparent to-primary-400 backdrop-blur-sm transition-all ease-in ${modal ? 'flex animate-mobileActive' : ''
-            }`}
+          className={`absolute left-0 top-0 z-50 flex h-screen w-screen items-center justify-center bg-primary bg-gradient-to-b from-transparent to-primary-400 backdrop-blur-sm transition-all ease-in ${
+            modal ? 'flex animate-mobileActive' : ''
+          }`}
         >
           <ul className="flex w-full transform flex-col items-center justify-center gap-8 overflow-hidden transition-all">
             <li className="m-2 w-full p-2 text-center transition-all hover:scale-105 hover:bg-secondary-800">

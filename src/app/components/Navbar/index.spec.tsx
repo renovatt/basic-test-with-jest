@@ -1,9 +1,10 @@
-import Navbar from "."
-import { fireEvent, render } from "@testing-library/react"
+import Navbar from '.'
+import { fireEvent, render } from '@testing-library/react'
 
 describe('Navbar Component Tests', () => {
   it('should render Navbar component', () => {
-    render(<Navbar openModal={() => { }} />)
+    const openModalMock = jest.fn()
+    render(<Navbar openModal={openModalMock} />)
   })
 
   it('should call openModal when Bars3Icon is clicked', () => {
@@ -17,31 +18,34 @@ describe('Navbar Component Tests', () => {
   })
 
   it('should render Bars3Icon', () => {
-    const { getByTestId } = render(<Navbar openModal={() => { }} />);
-    const barsIcon = getByTestId('svg-close-modal');
+    const openModalMock = jest.fn()
+    const { getByTestId } = render(<Navbar openModal={openModalMock} />)
+    const barsIcon = getByTestId('svg-close-modal')
 
-    expect(barsIcon).toBeInTheDocument();
-  });
+    expect(barsIcon).toBeInTheDocument()
+  })
 
   it('should have the correct number of navigation links', () => {
-    const { getAllByRole } = render(<Navbar openModal={() => { }} />);
-    const navigationLinks = getAllByRole('link');
+    const openModalMock = jest.fn()
+    const { getAllByRole } = render(<Navbar openModal={openModalMock} />)
+    const navigationLinks = getAllByRole('link')
 
-    expect(navigationLinks).toHaveLength(5);
-  });
+    expect(navigationLinks).toHaveLength(5)
+  })
 
   it('should have the correct text and href for each navigation link', () => {
-    const { getByRole } = render(<Navbar openModal={() => { }} />);
-    const homeLink = getByRole('link', { name: /início/i });
-    const aboutLink = getByRole('link', { name: /sobre/i });
-    const vacancyLink = getByRole('link', { name: /vagas/i });
-    const blogLink = getByRole('link', { name: /blog/i });
-    const projectsLink = getByRole('link', { name: /projetos/i });
+    const openModalMock = jest.fn()
+    const { getByRole } = render(<Navbar openModal={openModalMock} />)
+    const homeLink = getByRole('link', { name: /início/i })
+    const aboutLink = getByRole('link', { name: /sobre/i })
+    const vacancyLink = getByRole('link', { name: /vagas/i })
+    const blogLink = getByRole('link', { name: /blog/i })
+    const projectsLink = getByRole('link', { name: /projetos/i })
 
-    expect(homeLink).toHaveAttribute('href', '/');
-    expect(aboutLink).toHaveAttribute('href', '#about-us');
-    expect(vacancyLink).toHaveAttribute('href', '#vacancy');
-    expect(blogLink).toHaveAttribute('href', '#blog');
-    expect(projectsLink).toHaveAttribute('href', '#projects');
-  });
+    expect(homeLink).toHaveAttribute('href', '/')
+    expect(aboutLink).toHaveAttribute('href', '#about-us')
+    expect(vacancyLink).toHaveAttribute('href', '#vacancy')
+    expect(blogLink).toHaveAttribute('href', '#blog')
+    expect(projectsLink).toHaveAttribute('href', '#projects')
+  })
 })

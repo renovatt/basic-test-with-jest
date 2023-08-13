@@ -14,7 +14,11 @@ const Header = () => {
     <header className="flex h-20 w-full items-center justify-between bg-primary px-16 transition-all">
       <Link href="/" className="flex" data-testid="logo-link">
         <figure className="flex h-10 w-10 items-center justify-center rounded-md bg-white">
-          <Image src={logo} alt="logo" className="h-full w-full p-1 object-cover" />
+          <Image
+            src={logo}
+            alt="logo"
+            className="h-full w-full object-cover p-1"
+          />
         </figure>
       </Link>
 
